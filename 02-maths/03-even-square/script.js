@@ -15,6 +15,16 @@
 
         // your code here
 
+        var msg="";
+        var res= "0";
+
+        for(var x= 1; x<=21; x++) {
+            var square = x * x;
+            msg = msg + square + "\n";
+        }
+
+        alert(msg);
+
     });
 
 })();
