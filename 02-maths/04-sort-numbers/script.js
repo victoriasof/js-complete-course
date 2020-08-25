@@ -13,9 +13,15 @@
 
     // to get the value of an input: document.getElementById("element-id").value
 
+    var number = document.getElementById("numbers").value;
+    var numArray = number.split(",");
+
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
+
+        numArray.sort((a,b) => a - b);
+        alert(numArray);
 
     });
 
