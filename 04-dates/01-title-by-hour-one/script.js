@@ -20,7 +20,7 @@
     if (time < 18) {
         document.getElementById("target").innerHTML = "Hello";
     } else {
-            document.getElementById("target").innerHTML = "Good evening";
+        document.getElementById("target").innerHTML = "Good evening";
     }
 
 })();
