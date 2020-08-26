@@ -10,9 +10,16 @@
 // You will have time to focus on it later.
 
 (function() {
-
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-
     // your code here
+
+    let today = new Date();
+
+    let day= today.toLocaleDateString("default", {weekday: "long"});
+    let month=today.toLocaleString("default",{month:"long"});
+
+    let dateTime = day+' '+today.getDate()+' '+month+' '+today.getFullYear()+', '+ today.getHours()+'h'+today.getMinutes();
+
+    document.getElementById("target").innerHTML = dateTime;
 
 })();
