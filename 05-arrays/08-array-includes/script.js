@@ -11,21 +11,31 @@
 
 (function() {
 
-    var fruits = [
-        "apple",
-        "perry",
-        "strawberry",
-        "tomato",
-        "kiwi",
-        "banana",
-        "orange",
-        "mandarin",
-        "durian",
-        "peach",
-        "grapes",
-        "cherry",
-    ];
+    document.getElementById("run").addEventListener("click", function(){
 
-    // your code here
+        var fruits = [
+            "apple",
+            "perry",
+            "strawberry",
+            "tomato",
+            "kiwi",
+            "banana",
+            "orange",
+            "mandarin",
+            "durian",
+            "peach",
+            "grapes",
+            "cherry",
+        ];
+
+        // your code here
+
+            if (fruits.includes("apple")) {
+                console.log("yes");
+            }
+            else {
+                console.log("no");
+            }
+    })
 
 })();
