@@ -11,21 +11,30 @@
 
 (function() {
 
-    var fruits = [
-        "apple",
-        "pear",
-        "raspberry",
-        "tomatos",
-        "kiwi",
-        "banana",
-        "orange",
-        "mandarin",
-        "durian",
-        "peache",
-        "grap",
-        "cherry",
-    ];
+    document.getElementById("run").addEventListener("click", function(){
 
-    // your code here
+        var fruits = [
+            "apple",
+            "pear",
+            "raspberry",
+            "tomatos",
+            "kiwi",
+            "banana",
+            "orange",
+            "mandarin",
+            "durian",
+            "peache",
+            "grap",
+            "cherry",
+        ];
+
+        // your code here
+
+        for (i = 0; i < fruits.length; i++){
+
+            console.log(fruits[i]);
+        }
+
+    })
 
 })();
