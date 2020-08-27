@@ -10,20 +10,27 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("run").addEventListener("click", function(){
 
-    var fruits = [
-        "pomme",
-        "poire",
-        "fraise",
-        "tomate",
-        "orange",
-        "mandarine",
-        "durian",
-        "pêche",
-        "raisin",
-        "cerise",
-    ];
+        var fruits = [
+            "pomme",
+            "poire",
+            "fraise",
+            "tomate",
+            "orange",
+            "mandarine",
+            "durian",
+            "pêche",
+            "raisin",
+            "cerise",
+        ];
 
-    // your code here
+        // your code here
+
+        fruits.splice (0,1, "banana");
+        fruits.splice (9,1, "kiwi");
+        console.log(fruits);
+
+    })
 
 })();
