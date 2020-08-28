@@ -11,6 +11,13 @@
 
 (function() {
 
-    // your code here
+    // When hovering over the image, change its source attribute
+    // to the value specified in the "data-hover" attribute
+
+    document.querySelector("img").addEventListener("mouseover", function(){
+
+        this.src = "../../_shared/img/kiss-wink-heart.svg"
+
+    })
 
 })();
