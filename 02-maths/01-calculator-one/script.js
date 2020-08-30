@@ -26,26 +26,22 @@ let numbertwo;
         // perform an substraction
         checkinput();
         alert(numberone - numbertwo);
-
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
         // perform an multiplication
         checkinput();
         alert(numberone * numbertwo);
-
     });
 
     document.getElementById("division").addEventListener("click", function() {
         // perform an division
         checkinput();
-        alert(numberone / numbertwo)
-
+        alert(numberone / numbertwo);
     });
 
-    function checkinput(){
+    function checkinput() {
         numberone = parseInt(document.getElementById("op-one").value);
         numbertwo = parseInt(document.getElementById("op-two").value);
     }
-
 })();
