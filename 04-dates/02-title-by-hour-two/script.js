@@ -16,7 +16,7 @@
     let hours = now.getHours();
     let minutes = now.getMinutes();
 
-    if (hours < 17 && minutes < 30) {
+    if (hours < 17 && minutes < 30){
         document.getElementById("target").innerHTML = "Hello";
     }
     else {
