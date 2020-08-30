@@ -11,6 +11,8 @@
 
 (function() {
 
+    let name = prompt ("Please enter your name");
+    alert("Hello " + name + "!");
     // your code here
 
 })();
