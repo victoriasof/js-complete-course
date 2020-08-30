@@ -10,7 +10,8 @@
 // You will have time to focus on it later.
 
 (function() {
-    document.getElementById("run").addEventListener("click", function(){
+
+    document.getElementById("run").addEventListener("click",function(){
 
         var fruits = [
             "pomme",
@@ -26,9 +27,8 @@
         ];
 
         // your code here
-
         fruits.splice (0,1, "banana");
-        fruits.splice (9,1, "kiwi");
+        fruits.splice(9,0, "kiwi");
         console.log(fruits);
 
     })

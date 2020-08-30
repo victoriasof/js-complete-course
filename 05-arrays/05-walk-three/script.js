@@ -11,7 +11,7 @@
 
 (function() {
 
-    document.getElementById("run").addEventListener("click", function(){
+    document.getElementById("run").addEventListener("click",function(){
 
         var people = [
             {
@@ -43,8 +43,8 @@
 
         // your code here
         people.forEach(function(person){
-            console.log(person.firstname + " " +person.lastname);
 
+            console.log(person.firstname + " " +person.lastname);
         })
 
     })

@@ -13,7 +13,7 @@
 
     document.getElementById("run").addEventListener("click",function(){
 
-        let people = [
+        var people = [
             {
                 firstname: "Grenville",
                 lastname: "Stive",
@@ -92,13 +92,13 @@
         ];
 
         // your code here
-
         let ages = [];
-        people.forEach(function (age) {
+        people.forEach(function (age){
             ages.push(age.age);
         });
 
-        let sum = ages.reduce((a, b) => a + b, 0);
+        let sum = ages.reduce ((a, b) => a + b, 0);
+
         console.log(sum);
 
     })

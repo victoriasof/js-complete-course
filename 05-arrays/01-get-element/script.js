@@ -11,7 +11,7 @@
 
 (function() {
 
-    document.getElementById("run").addEventListener("click", function () {
+    document.getElementById("run").addEventListener("click", function(){
 
         var fruits = [
             "apple",
@@ -30,6 +30,7 @@
 
         // your code here
         console.log(fruits[3]);
+
     })
 
 })();

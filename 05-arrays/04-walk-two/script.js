@@ -13,7 +13,7 @@
 
     document.getElementById("run").addEventListener("click",function(){
 
-        let fruits = [
+        var fruits = [
             "pomme",
             "poire",
             "fraise",
@@ -28,13 +28,11 @@
             "cerise",
         ];
 
-        // your code here Object.keys(obj).forEach(function(key) {
-        //   console.log(key, obj[key]);
-        // });
-
-        fruits.forEach(function (fruit){
+        // your code here
+        fruits.forEach(function(fruit){
             console.log(fruit);
         })
+
     })
 
 })();

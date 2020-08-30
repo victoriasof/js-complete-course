@@ -10,9 +10,9 @@
 // You will have time to focus on it later.
 
 (function() {
-// your code here
-    document.getElementById("run").addEventListener("click",function(){
 
+    document.getElementById("run").addEventListener("click",function(){
+        // your code here
         let numbers = [];
 
         for (i = 0; i < 10; i++){
@@ -21,7 +21,8 @@
 
         let table = document.querySelectorAll("td");
         console.log(table);
-        for (i=0; i<table.length; i++){
+
+        for (i = 0; i < table.length; i++){
             table[i].innerText=numbers[i];
         }
 

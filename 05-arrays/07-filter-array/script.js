@@ -13,7 +13,7 @@
 
     document.getElementById("run").addEventListener("click",function(){
 
-        let people = [
+        var people = [
             {
                 firstname: "Dreddy",
                 lastname: "Nussgen",
@@ -90,14 +90,18 @@
                 age: 81,
             },
         ];
-        // your code here
 
+        // your code here
         let adults = Array.from(people);
 
         people.forEach(function(adults){
+
             if (adults.age > 18) {
                 console.log(adults);
             }
         })
+
     })
+
+
 })();
