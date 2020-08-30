@@ -9,20 +9,8 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function info() {
-    var name = prompt ("What is your name?");
-    var gender = prompt ("Are you a boy or a girl?");
-    var hometown = prompt ("Where are you from?");
-    alert ("name: " + name + ", gender: " +gender + ", home town: " +hometown);
+(function() {
 
     // your code here
-
-    if (confirm("Please confirm")) {
-
-    }
-    else {
-        info()
-    }
-
 
 })();

@@ -10,9 +10,8 @@
 // You will have time to focus on it later.
 
 (function() {
-    var NOYC ="Hello, World!";
-    alert (NOYC);
-
+    let name ="Hello, World!";
+    alert(name);
     // your code here
 
 })();
