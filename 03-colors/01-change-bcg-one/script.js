@@ -10,12 +10,12 @@
 // You will have time to focus on it later.
 
 (function() {
-    // your code here
 
-    document.getElementById("red").addEventListener("click", function (){
+    // your code here
+    document.getElementById("red").addEventListener("click", function(){
         document.body.style.backgroundColor = "red";})
 
-    document.getElementById("green").addEventListener("click", function (){
+    document.getElementById("green").addEventListener("click",function(){
         document.body.style.backgroundColor = "green";})
 
     document.getElementById("yellow").addEventListener("click", function(){

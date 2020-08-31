@@ -11,7 +11,7 @@
 
 (function() {
 
-    document.getElementById("run").addEventListener("click", function(){
+    document.getElementById("run").addEventListener("click",function(){
 
         var fruits = [
             "apple",
@@ -29,9 +29,7 @@
         ];
 
         // your code here
-
-        for (i = 0; i < fruits.length; i++){
-
+        for (i=0; i<fruits.length; i++){
             console.log(fruits[i]);
         }
 

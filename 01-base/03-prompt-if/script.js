@@ -10,12 +10,14 @@
 // You will have time to focus on it later.
 
 (function() {
-    var Cake = prompt( "Would you like some cake?");
-    if (Cake === "yes"){
-        alert ("Congratulations");
+    let cake = prompt ("Would you like some cake?");
+    if (cake === "yes"){
+        alert("Congratulations");
     }
     else {
-        alert ("More cake for me then");
+        alert("More cake for me then");
     }
+
+  // your code here
 
 })();

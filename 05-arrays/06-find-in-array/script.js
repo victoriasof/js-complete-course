@@ -11,7 +11,7 @@
 
 (function() {
 
-    document.getElementById("run").addEventListener("click",function(){
+    document.getElementById("run").addEventListener("click",function (){
 
         let people = [
             {
@@ -93,13 +93,12 @@
 
         // your code here
         people.forEach(function(person){
-            if (person.lastname === "Dupont" && person.firstname ==="Jean"){
-                console.log (person.email);
-                console.log (people.indexOf(person));
+            if (person.lastname === "Dupont" && person.firstname === "Jean"){
+                console.log(person.email);
+                console.log(people.indexOf(person));
             }
 
         })
-
     })
 
 })();

@@ -10,19 +10,17 @@
 // You will have time to focus on it later.
 
 (function info() {
-    var name = prompt ("What is your name?");
-    var gender = prompt ("Are you a boy or a girl?");
-    var hometown = prompt ("Where are you from?");
-    alert ("name: " + name + ", gender: " +gender + ", home town: " +hometown);
+    let name = prompt("What is your name?");
+    let gender = prompt("Are you a boy or a girl?");
+    let hometown = prompt("Where are you from?");
 
-    // your code here
+    alert("name: "+ name + ", gender: " + gender + ", hometown: " + hometown);
 
-    if (confirm("Please confirm")) {
-
+    if(confirm("Please confirm")){
+        //empty if statement
     }
-    else {
+    else{
         info()
     }
-
 
 })();
