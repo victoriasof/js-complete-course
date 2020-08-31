@@ -11,7 +11,7 @@
 
 (function() {
 
-    var gallery= [
+    let gallery= [
         "../../_shared/img/bell.svg",
         "../../_shared/img/clock.svg",
         "../../_shared/img/compass.svg",
@@ -20,5 +20,24 @@
     ];
 
     // your code here
+
+    let image = document.getElementsByTagName("img");
+
+    let i=0;
+
+    function nextImage() {
+
+        i++;
+        if (i > gallery.length - 1) {
+            i = 0;
+        }
+
+        return gallery[i];
+    }
+
+    document.getElementById("next").addEventListener("click", function(){
+
+        image[0].setAttribute("src", nextImage());
+    })
 
 })();
