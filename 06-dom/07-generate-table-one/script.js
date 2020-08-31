@@ -10,7 +10,25 @@
 // You will have time to focus on it later.
 
 (function() {
-
     // your code here
+    function createTable(){
+
+        let table = document.getElementById("target");
+        let tablebody = document.createElement("table");
+
+        for (let i=0; i<10; i++){
+            let tr = document.createElement("tr");
+
+            for (let j=0; j<1; j++){
+                let td = document.createElement("td");
+
+                tr.appendChild(td);
+            }
+            tablebody.appendChild(tr);
+        }
+        table.appendChild(tablebody);
+
+    }
+    createTable();
 
 })();
