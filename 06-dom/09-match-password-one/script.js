@@ -10,7 +10,17 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("run").addEventListener("click",function(){
 
-    // your code here
+        // your code here
+
+        if (document.getElementById("pass-one").value !==
+            document.getElementById("pass-two").value) {
+
+            document.getElementById("pass-one").style.borderColor = "red";
+            document.getElementById("pass-two").style.borderColor = "red";
+        }
+
+    })
 
 })();
