@@ -10,7 +10,21 @@
 // You will have time to focus on it later.
 
 (function() {
-
     // your code here
+    document.getElementById("pass-one").addEventListener("keyup", function(){
+
+        let input = document.getElementById("pass-one").value;
+        let validity = document.getElementById("validity");
+
+
+        if (input.length >= 8 && input.match(/[0-9]{2}/)) {
+
+            validity.innerHTML = "Ok";
+        } else {
+
+            validity.innerHTML = "Not ok";
+        }
+
+    })
 
 })();
