@@ -12,5 +12,19 @@
 (function() {
 
     // your code here
+    let target = "a smooth sea never made a skilled sailor";
+
+    document.getElementById("target").innerHTML = " ";
+
+    let i = 0;
+
+    function typeWriter() {
+        if (i < target.length) {
+            document.getElementById("target").innerHTML += target.charAt(i);
+            i++;
+            setTimeout(typeWriter, Math.floor(Math.random()*500));
+        }
+    }
+    typeWriter();
 
 })();
