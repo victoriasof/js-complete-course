@@ -11,25 +11,21 @@
 
 (function() {
 
-    let words = document.getElementById("target").innerHTML
+    let text = document.getElementById("target").innerHTML
         = "a smooth sea never made a skilled sailor";
-
-    let characters = words.split(" ");
-
+    let words = text.split(" ");
     let wave = " ";
-    let size = [4, 5, 4, 3, 2, 1, 2, 3];
 
-    for (let i = 0; i < characters.length; i++) {
-
-         wave += "<span>" + characters[i] + "</span>";
-
+    for (let i = 0; i < words.length; i++) {
+         wave += "<span>" + words[i] + "</span>";
     }
 
     document.getElementById("target").innerHTML = wave;
-    let letters = document.getElementsByTagName("span");
-    for (let x=0; x<letters.length; x++){
-        let y = x+1;
-        letters[y].style.fontSize = size[x % size.length] + "0px";
-    }
 
+    let letters = document.getElementsByTagName("span");
+    let size = [4, 5, 4, 3, 2, 1, 2, 3];
+
+    for (let j=0; j<letters.length; j++){
+        letters[j+1].style.fontSize = size[j % size.length] + "0px";
+    }
 })();
