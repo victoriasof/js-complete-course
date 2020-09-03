@@ -11,6 +11,24 @@
 
 (function() {
 
-    // your code here
+        document.querySelectorAll(".actions button").forEach(button => {
+
+            let count = button.dataset.min;
+
+            button.addEventListener("click",() => {
+                count < button.dataset.max ? count++ : count = button.dataset.min;
+
+                button.innerHTML = count.toString().padStart(2, '0');
+
+                let target = document.getElementById("target");
+                target.innerHTML = "0";
+
+                document.querySelectorAll(".actions button").forEach(button => {
+                    target.innerHTML += button.innerHTML;
+
+                })
+
+            })
+    })
 
 })();
