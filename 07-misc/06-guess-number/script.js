@@ -12,5 +12,30 @@
 (function() {
 
     // your code here
+    //let X = random number
+    let X = Math.floor(Math.random()*100)+1;
+    //let Y = input counter
+    let Y = []
+
+    alert(X);
+    let guess;
+
+    do {
+
+        guess = Number(prompt("guess number X"));
+
+        Y.push(guess);
+
+        if (X > guess) {
+            alert("higher");
+        }
+
+        else if (X < guess) {
+            alert("lower");
+        }
+    }
+    while(guess !== X);
+
+    alert("that's it! it took you " + (Y.length) + " guesses");
 
 })();
