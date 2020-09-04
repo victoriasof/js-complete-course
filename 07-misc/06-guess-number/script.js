@@ -15,16 +15,16 @@
     //let X = random number
     let X = Math.floor(Math.random()*100)+1;
     //let Y = input counter
-    let Y = []
+    let Y = [] // empty array
 
-    alert(X);
-    let guess;
+    alert(X); //to test code
+    let guess; //outside of do while loop
 
     do {
 
         guess = Number(prompt("guess number X"));
 
-        Y.push(guess);
+        Y.push(guess); //push array into another array
 
         if (X > guess) {
             alert("higher");
@@ -36,6 +36,6 @@
     }
     while(guess !== X);
 
-    alert("that's it! it took you " + (Y.length) + " guesses");
+    alert("that's it! it took you " + (Y.length) + " guesses"); //length of guessed indexes ??
 
 })();
