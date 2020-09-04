@@ -10,7 +10,18 @@
 // You will have time to focus on it later.
 
 (function() {
-
     // your code here
+    let target = document.getElementById("target");
+    let increment = document.getElementById("increment");
+
+    target.innerHTML = localStorage.getItem("target");
+    //load value from local storage
+
+    increment.addEventListener("click", function(){
+
+        target.innerHTML ++
+        localStorage.setItem("target", target.innerHTML);
+
+    })
 
 })();
