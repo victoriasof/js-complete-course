@@ -32,15 +32,14 @@ function getPostsWithComments(){
             window.lib.getComments(post.id, function(error, comments){
 
 
-               // post.comment = comments;
+                post.comment = comments;
 
+                /* ANOTHER WAY:
                 comments.forEach(comment =>{
-
                     if (comment.id === post.id){
                         post.comment = comment.comment;
                     }
-
-                })
+                }) */
 
             });
             console.log(post);
