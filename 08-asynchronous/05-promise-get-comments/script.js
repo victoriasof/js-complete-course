@@ -26,37 +26,27 @@ Displays items in the console (getPosts and getComments functions will always be
 
 (() => {
     // your code here
-    let run = document.getElementById("run")
+    document.getElementById("run").addEventListener("click", ()=>{
 
-    run.addEventListener("click", getPostsWithComments)
+        new Promise ((resolve) =>{
 
-//exersize 4
+            resolve(window.lib.getPosts());
 
-    function handleSuccess(resolve) {
-        console.log(resolve);
-    }
+        }).then(result =>{
 
-    function handleFailure(reject) {
-        console.error(reject);
-    }
 
-    window.lib.getPosts().then(handleSuccess, handleFailure);
+                new Promise ((resolve)=>{
+                    resolve(window.lib.getComments())
 
-//exercise 2
-    function getPostsWithComments(){
-
-        window.lib.getPosts(function(error,posts){
-
-            posts.forEach(post =>{
-                window.lib.getComments(post.id, function(error, comments){
-
-                    post.comment = comments;
-
-                });
-                console.log(post);
             });
 
-        });
-    }
+        }).then(result2 => {
+            console.log(result2)
+
+        }).catch(error => {
+            console.log(error)
+        })
+
+    })
 
 })();
