@@ -24,29 +24,22 @@ Displays items in the console (getPosts and getComments functions will always be
 
  */
 
-(() => {
     // your code here
-    document.getElementById("run").addEventListener("click", ()=>{
 
-        new Promise ((resolve) =>{
+document.getElementById("run").addEventListener("click", () => {
 
-            resolve(window.lib.getPosts());
+    let posters = (resolve) => resolve.forEach((post) => {
 
-        }).then(result =>{
+        let comments = (resolve) => {
+            post.comments = resolve[post.id].content
 
-
-                new Promise ((resolve)=>{
-                    resolve(window.lib.getComments())
-
-            });
-
-        }).then(result2 => {
-            console.log(result2)
-
-        }).catch(error => {
-            console.log(error)
-        })
-
+            console.log(post)
+        }
+        window.lib.getComments(post.id).then(comments);
     })
+    window.lib.getPosts().then(posters);
+})
 
-})();
+
+
+
