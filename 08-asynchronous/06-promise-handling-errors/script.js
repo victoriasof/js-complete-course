@@ -18,8 +18,6 @@ Warning: the Promise returned by the getPersons function has more or less a
 half chance of being rejected with an error. If so, use console.error() to display it).
  */
 
-(() => {
-
     /*
     let run = document.getElementById('run');
 
@@ -41,13 +39,14 @@ half chance of being rejected with an error. If so, use console.error() to displ
 
      */
 
+(() => {
+
    document.getElementById("run").addEventListener("click", ()=>{
 
        let persons = (resolve) => console.log(resolve);
        let personsError = (reject) => console.error(reject);
 
        window.lib.getPersons().then(persons).catch(personsError);
-
 
    })
 
