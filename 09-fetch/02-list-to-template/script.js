@@ -27,9 +27,9 @@
 
                     let templateNode = document.getElementById("tpl-hero").content.cloneNode(true);
 
-                    templateNode.querySelector(".name").innerText = hero.name;
-                    templateNode.querySelector(".alter-ego").innerText = hero.alterEgo;
-                    templateNode.querySelector(".powers").innerText= hero.abilities;
+                    templateNode.querySelector(".name").innerHTML = hero.name;
+                    templateNode.querySelector(".alter-ego").innerHTML = hero.alterEgo;
+                    templateNode.querySelector(".powers").innerHTML = hero.abilities;
 
                     document.getElementById("target").appendChild(templateNode);
 
