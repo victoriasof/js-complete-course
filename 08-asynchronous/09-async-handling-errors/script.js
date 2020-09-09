@@ -14,7 +14,7 @@
 
     document.getElementById("run").addEventListener("click", async()=>{
 
-        await window.lib.getPersons().then(console.log).catch(console.log);
+        await window.lib.getPersons().then(console.log).catch(console.error);
 
     })
 
