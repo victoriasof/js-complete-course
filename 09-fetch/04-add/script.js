@@ -22,20 +22,23 @@ Caution: powers must be stored in the same format as the previous heroes!
 
         fetch("http://localhost:3000/heroes")
             .then(response => response.json())
-            .then(data => console.log(data))
             .then(data => addData(data))
             .catch(err => console.error(err));
 
-        function addData(){
+        function addData(heroes){
 
             let name = document.getElementById("hero-name").value;
             let alterEgo = document.getElementById("hero-alter-ego").value;
             let powers = document.getElementById("hero-powers").value;
 
-            console.log(name,alterEgo,powers);
+            let idCounter = heroes.length +1;
+            let heroPowers = powers.split(',');
 
-            let newHero = document.createElement("form");
-            document.body.appendChild(newHero);
+            let newHero = {id: idCounter, name: name, alterEgo: alterEgo, abilities: heroPowers};
+
+            heroes.push(newHero);
+            console.log(heroes);
+
         }
 
     })
